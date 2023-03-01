@@ -1,5 +1,10 @@
-A page developed to showcase projects I am working on and provide contact details. 
+## My Portfolio Webpage
 
-Thank you for viewing my page. The aim of this project was initially to showcase my HTML/CSS skills and has additionally provided me the opportunity to provide links to projects I have been working on or have worked on. This page was initially designed to be viewed with a large viewports and via desktop computers. Therefore, the transition functionality of the project images will not work with mobile devices - I will remove this functionality for handheld or touchscreen devices. 
+### This is my personal portfolio webpage created using HTML and CSS. It showcases my projects, provides information about me, and has a contact page for users to send me an email.
 
-I have recently began adding Media Queries to the page, however these are not finalised and I am aware of bugs with the contact and project page.
+### Features
+- Home page with links to the rest of the webpage
+- About me section including information about my skills and experience
+- Project page with links to my Github repositories and a brief description of 2 projects
+- Contact page with a form for users to send me an email
+- Responsive design to ensure the webpage looks great on all devices
