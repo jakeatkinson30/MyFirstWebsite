@@ -1,0 +1,574 @@
+/* Universal Style */
+
+html {
+    height: 100%;
+    margin: 0;
+    overflow: scroll;
+}
+
+body {
+    background-image: url("../Portfolio/boris-stefanik-wxJscL5ZzDA-unsplash.jpg");
+    height: 100vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 50px;
+    overflow: scroll;
+}
+
+/* Nav Section */
+
+
+#navBar {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: #32312e;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#navUl {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#navLi {
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px;
+    font-size: 22px;
+    color: mintcream;
+}
+
+/* Nav media queries */
+
+/* For screens smaller than 320px */
+@media (max-width: 320px) {
+    #navLi {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
+
+/* For screens between 321px and 480px */
+@media (min-width: 321px) and (max-width: 480px) {
+    #navLi {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+}
+
+/* For screens between 481px and 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    #navLi {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+}
+
+/* For screens between 769px and 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+    #navLi {
+        font-size: 22px;
+        padding: 0 25px;
+    }
+}
+
+/* Main */
+
+.mainText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: darkgrey;
+}
+
+.nameColor {
+    color: #77643f;
+}
+
+#portfolioButton {
+    background: none;
+    color: darkgrey;
+    padding: 10px 11px;
+    margin-top: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid darkgrey;
+    cursor: pointer;
+    box-shadow: 1px 1px darkgrey;
+    transition: 0.4s;
+}
+
+/* Media queries for main section */
+
+/* For screens smaller than 320px */
+@media (max-width: 320px) {
+    .mainText {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    #portfolioButton {
+        font-size: 14px;
+    }
+}
+
+/* For screens between 321px and 480px */
+@media (min-width: 321px) and (max-width: 480px) {
+    .mainText {
+        font-size: 12px;
+        /* padding: 50px; */
+        text-align: center;
+    }
+
+    #portfolioButton {
+        font-size: 12px;
+    }
+}
+
+/* For screens between 481px and 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .mainText {
+        font-size: 14px;
+        /* padding: 100px; */
+        text-align: center;
+    }
+
+    #portfolioButton {
+        font-size: 14px;
+    }
+}
+
+/* For screens between 769px and 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .mainText {
+        font-size: 18px;
+        /* padding: 150px; */
+        text-align: center;
+    }
+
+    #portfolioButton {
+        font-size: 16px;
+    }
+}
+
+
+/* Contact Me page */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    color: mintcream;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: darkgray;
+    color: #32312e;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #32312e;
+    color: mintcream;
+}
+
+/* Anchor styles */
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: mintcream;
+    display: inline-block;
+}
+
+a:hover {
+    color: mintcream;
+    text-decoration: line-through;
+}
+
+a:active {
+    color: mintcream;
+}
+
+/* Portfolio */
+
+.projectSection {
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    padding: 70px 0px 100px;
+    transition: 1s;
+    display: block;
+}
+
+.projectHeading {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 35px;
+    font-size: 40px;
+    color: mintcream;
+}
+
+.projectContainer {
+    display: grid;
+    grid-template-columns: 388px 388px;
+    grid-gap: 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectCard {
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectImg {
+    object-fit: cover;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.projectContent {
+    position: relative;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+#portfolioButton:hover {
+    background: darkgrey;
+    color: black;
+}
+
+.projectButton {
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    border: none;
+    background: #000;
+    color: mintcream;
+    cursor: pointer;
+}
+
+.projectCard:hover .projectImg {
+    filter: blur(20px);
+}
+
+.projectCard:hover .projectContent {
+    opacity: 1;
+}
+
+.projectButton.github {
+    /* margin-left: 25px;
+    margin-right: 5px;
+    padding-right: 25px;
+    padding-left: 25px; */
+    color: darkgray;
+}
+
+.projectContent h1 {
+    text-align: center;
+    color: darkgrey;
+}
+
+.projectInfo {
+    margin: 18px 10px 18px 10px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: darkgray;
+}
+
+/* Media queries for Portfolio page */
+
+/* For screens smaller than 769px */
+@media (max-width: 768px) {
+    .projectImg {
+        display: none;
+    }
+
+    .projectContent {
+        opacity: 1;
+    }
+
+    .projectCard:hover .projectImg {
+        filter: none;
+    }
+
+    .projectButtonGroup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectButton {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .projectContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+
+    .projectImg,
+    .projectContent {
+        width: 100%;
+        height: 100%;
+    }
+
+    .projectCard {
+        height: auto;
+    }
+
+    .projectHeading {
+        font-size: 30px;
+    }
+
+    .projectInfo {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .projectButton {
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .projectButton.github {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .projectSection {
+        padding-top: 0;
+    }
+}
+
+/* For screens between 769px and 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .projectImg {
+        display: none;
+    }
+
+    .projectSection {
+        padding-top: 0;
+    }
+
+    .projectContent {
+        opacity: 1;
+    }
+
+    .projectCard:hover .projectImg {
+        filter: none;
+    }
+
+    .projectButtonGroup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectButton {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .projectContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+
+    .projectImg,
+    .projectContent {
+        width: 100%;
+        height: 100%;
+    }
+
+    .projectCard {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .projectHeading {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .projectInfo {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .projectButton {
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .projectButton.github {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+/* For screens larger than 1200px */
+@media (min-width: 1201px) {
+    .projectContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectButton.github {
+        margin-left: 25px;
+        margin-right: 5px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .projectButton.github {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+/* About Me section */
+
+#aboutContent1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#aboutPara {
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.9em;
+}
+
+#contactText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: mintcream;
+    line-height: 1.9em;
+}
+
+/* Media queries for About Me section */
+
+/* For screens smaller than 320px */
+@media (max-width: 320px) {
+    #aboutPara {
+        font-size: 11px;
+        line-height: 1.2;
+    }
+}
+
+/* For screens between 321px and 480px */
+@media (min-width: 321px) and (max-width: 480px) {
+    #aboutContent1 {
+        /* padding: 20px; */
+    }
+
+    #aboutPara {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+}
+
+/* For screens between 481px and 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    #aboutContent1 {
+        align-items: center;
+    }
+
+    #aboutPara {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
+
+/* For screens between 769px and 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+    #aboutContent1 {
+        align-items: center;
+    }
+
+    #aboutPara {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 600px;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+}
